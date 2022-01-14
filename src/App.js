@@ -1,7 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import onPrint from "./reactaPrinter";
+import React from "react";
 function App() {
+  React.useEffect(() => {
+    onPrint();
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
